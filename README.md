@@ -41,7 +41,7 @@
 <br>
 
 ### PDF Academic Report
-<img src="screenshots/reports.png" alt="PDF report" width="500">
+<img src="screenshots/reports.png" alt="PDF report" width="850">
 
 </div>
 
