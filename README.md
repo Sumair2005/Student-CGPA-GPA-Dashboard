@@ -20,20 +20,15 @@ locally - no internet connection, accounts or tracking.
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+Screenshots are not included yet. Add your own to the `screenshots/` folder,
+then reference them here:
 
-### Dashboard Light Mode
-![Semesters](screenshots/dashboard (light mode).png)
-
-### Semester
-![Dark Mode](screenshots/semester.png)
-
-### Performance
-![Dark Mode](screenshots/performance.png)
-
-### PDF Report
-![PDF Report](screenshots/reports.png)
+```text
+screenshots/dashboard.png
+screenshots/semester.png
+screenshots/dark-mode.png
+screenshots/report.png
+```
 
 ## Technologies
 
