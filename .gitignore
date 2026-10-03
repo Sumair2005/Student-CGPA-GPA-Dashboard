@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local database (contains personal student data - never commit it)
+*.db
+*.sqlite3
+
+# Generated reports and personal exports
+Student_Academic_Report*.pdf
+student_gpa_backup*.json
+student_gpa_data*.csv
