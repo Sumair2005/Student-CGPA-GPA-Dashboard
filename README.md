@@ -47,8 +47,8 @@ Requires Python 3.11 or newer, installed from python.org with the
 "tcl/tk and IDLE" option enabled (it is on by default).
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd student-gpa-cgpa-dashboard
+git clone https://github.com/Sumair2005/Student-CGPA-GPA-Dashboard.git
+cd Student-CGPA-GPA-Dashboard
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -77,6 +77,18 @@ Quality Points = Credit Hours x Grade Point
 SGPA = Total Quality Points in the semester / Total Credit Hours in the semester
 ```
 
+Example with the grade scale below (three subjects, 3 credit hours each):
+
+```text
+Subject 1: grade A   ->  3 x 3.60 = 10.80
+Subject 2: grade B+  ->  3 x 3.20 =  9.60
+Subject 3: grade A-  ->  3 x 3.20 =  9.60
+
+Total quality points = 30.00
+Total credit hours   = 9
+SGPA = 30.00 / 9 = 3.33
+```
+
 **CGPA** (cumulative GPA) is weighted by credit hours. It is *not* the average
 of the SGPAs:
 
@@ -88,19 +100,29 @@ Example: Semester 1 has SGPA 3.50 over 18 credits and Semester 2 has SGPA 3.80
 over 21 credits. CGPA = (3.50 x 18 + 3.80 x 21) / 39 = 3.66 (a simple average
 would wrongly give 3.65).
 
-Default grade scale (edit it in `core/grading.py`):
+## Grade Scale
 
-```text
-A+ 4.00   A 4.00   A- 3.70
-B+ 3.30   B 3.00   B- 2.70
-C+ 2.30   C 2.00   C- 1.70
-D+ 1.30   D 1.00   F  0.00
-```
+The scale used by this project (edit it in `core/grading.py`):
+
+| Grade | Grade Point | Quality Points (3 credit hours) |
+|-------|-------------|---------------------------------|
+| A+    | 4.00        | 12.00                           |
+| A     | 3.60        | 10.80                           |
+| A-    | 3.20        | 9.60                            |
+| B+    | 3.20        | 9.60                            |
+| B     | 2.80        | 8.40                            |
+| B-    | 2.40        | 7.20                            |
+| C+    | 2.20        | 6.60                            |
+| C     | 2.00        | 6.00                            |
+| C-    | 1.80        | 5.40                            |
+| D+    | 1.50        | 4.50                            |
+| D     | 1.00        | 3.00                            |
+| F     | 0.00        | 0.00                            |
 
 ## Project Structure
 
 ```text
-student-gpa-cgpa-dashboard/
+Student-CGPA-GPA-Dashboard/
 |-- main.py
 |-- database/
 |   |-- __init__.py
