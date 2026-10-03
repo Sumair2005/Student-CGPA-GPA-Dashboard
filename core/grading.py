@@ -17,7 +17,7 @@ GRADE_SCALE: Final[dict[str, float]] = {
     "A-": 3.20,
     "B+": 3.20,  # 09.60 QP for 3 credit hours
     "B": 2.80,   # 08.40 QP for 3 credit hours
-    "B-": 2.40,
+    "B-": 2.60,
     "C+": 2.40,
     "C": 2.00,   # 06.00 QP for 3 credit hours
     "C-": 1.80,
