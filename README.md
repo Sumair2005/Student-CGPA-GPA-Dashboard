@@ -247,6 +247,6 @@ Released under the [MIT License](LICENSE).
 
 <div align="center">
 
-Built by [Sumair](https://github.com/Sumair2005) · If you find this useful, give it a ⭐
+Built by [Sumair Ahmed Mangi](https://github.com/Sumair2005) · If you find this useful, give it a ⭐
 
 </div>
