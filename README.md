@@ -20,15 +20,11 @@ locally - no internet connection, accounts or tracking.
 
 ## Screenshots
 
-Screenshots are not included yet. Add your own to the `screenshots/` folder,
-then reference them here:
-
-```text
 screenshots/dashboard.png
 screenshots/semester.png
 screenshots/dark-mode.png
 screenshots/report.png
-```
+
 
 ## Technologies
 
