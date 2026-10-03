@@ -25,6 +25,7 @@
 
 <br>
 
+### Dashboard Light Mode
 <img src="screenshots/dashboard (light mode).png" alt="Dashboard" width="850">
 
 <br>
@@ -34,7 +35,7 @@
 
 <br>
 
-### Dark Mode
+### Performance
 <img src="screenshots/performance.png" alt="Dark mode" width="850">
 
 <br>
