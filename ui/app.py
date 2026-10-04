@@ -15,7 +15,7 @@ from ui.semesters import SemestersPage
 from ui.settings import SettingsPage
 from ui.theme import DEFAULT_THEME, ThemeManager
 from ui.widgets import Field, FormDialog, Tooltip
-from utils.helpers import APP_NAME, APP_VERSION
+from utils.helpers import APP_NAME, APP_VERSION, project_root
 
 NAV_ITEMS = (
     ("dashboard", "\U0001F3E0", "Dashboard"),
@@ -43,6 +43,11 @@ class App(tk.Tk):
         self.title(APP_NAME)
         self.geometry("1200x760")
         self.minsize(1000, 660)
+        
+        try:
+            self.iconbitmap(default=str(project_root() / "assets" / "app_icon.ico"))
+        except tk.TclError:
+            pass  # the app still works without the icon
 
         try:
             saved_theme = db.get_setting("theme", DEFAULT_THEME)

@@ -8,10 +8,12 @@ from tkinter import messagebox
 
 from database.database import Database, DatabaseError
 from ui.app import App
-from utils.helpers import APP_NAME, default_db_path, enable_high_dpi
+from utils.helpers import (APP_NAME, default_db_path, enable_high_dpi,
+                           set_windows_app_id)
 
 
 def main() -> int:
+    set_windows_app_id()  # must run before the window is created
     enable_high_dpi()
     try:
         database = Database(default_db_path())

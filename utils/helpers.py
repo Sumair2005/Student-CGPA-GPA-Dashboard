@@ -68,3 +68,14 @@ def enable_high_dpi() -> None:
         ctypes.windll.shcore.SetProcessDpiAwareness(1)  # type: ignore[attr-defined]
     except (AttributeError, OSError):
         pass
+
+def set_windows_app_id(app_id: str = "Sumair.StudentGPADashboard.1") -> None:
+    """Make Windows show this app's own icon in the taskbar."""
+    if not sys.platform.startswith("win"):
+        return
+    try:
+        import ctypes
+
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)  # type: ignore[attr-defined]
+    except (AttributeError, OSError):
+        pass
