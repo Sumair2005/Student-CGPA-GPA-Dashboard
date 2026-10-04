@@ -136,7 +136,8 @@ Example (three subjects, 3 credit hours each):
 ```text
 Subject 1: grade A   ->  3 x 3.60 = 10.80
 Subject 2: grade B+  ->  3 x 3.20 =  9.60
-Subject 3: grade A-  ->  3 x 3.20 =  9.60
+Subject 3: grade A-  ->  3 x 3.20 =  10.20
+
 
 Total quality points = 30.00
 Total credit hours   = 9
