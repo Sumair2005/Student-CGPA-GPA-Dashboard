@@ -13,17 +13,17 @@ MAX_GPA: Final[float] = 4.0
 # Updated grading scale (grade points per credit hour matching your transcript scale).
 GRADE_SCALE: Final[dict[str, float]] = {
     "A+": 4.00,  # 12.00 QP for 3 credit hours
-    "A": 3.60,   # 10.80 QP for 3 credit hours
-    "A-": 3.20,
-    "B+": 3.20,  # 09.60 QP for 3 credit hours
-    "B": 2.80,   # 08.40 QP for 3 credit hours
-    "B-": 2.60,
-    "C+": 2.40,
-    "C": 2.00,   # 06.00 QP for 3 credit hours
-    "C-": 1.80,
-    "D+": 1.50,  # 04.50 QP for 3 credit hours
-    "D": 1.00,   # 03.00 QP for 3 credit hours
-    "F": 0.00
+    "A": 3.60,   # 10.80
+    "A-": 3.40,  # 10.20
+    "B+": 3.20,  #  9.60
+    "B": 2.80,   #  8.40
+    "B-": 2.60,  #  7.80
+    "C+": 2.40,  #  7.20
+    "C": 2.00,   #  6.00
+    "C-": 1.75,  #  5.25
+    "D+": 1.50,  #  4.50
+    "D": 1.00,   #  3.00
+    "F": 0.00,
 }
 
 GRADES: Final[tuple[str, ...]] = tuple(GRADE_SCALE)
